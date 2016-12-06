@@ -1,0 +1,19 @@
+{
+  "name": "potolok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuba4el/potolok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuba4el/potolok/issues"
+  },
+  "homepage": "https://github.com/zuba4el/potolok#readme"
+}

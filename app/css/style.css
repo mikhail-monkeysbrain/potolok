@@ -1,0 +1,195 @@
+.font-white {
+  color: #fff !important;
+}
+.font-black {
+  color: #000 !important;
+}
+.font-red {
+  color: #cf2930 !important;
+}
+.font-bold {
+  font-weight: 600 !important;
+}
+.font-normal {
+  font-weight: normal !important;
+}
+.font-xs {
+  font-size: 50% !important;
+}
+.font-s {
+  font-size: 80% !important;
+}
+.font-l {
+  font-size: 100% !important;
+}
+.font-xl {
+  font-size: 120% !important;
+}
+.font-xxl {
+  font-size: 150% !important;
+}
+.ttu {
+  text-transform: uppercase !important;
+}
+.tdu {
+  text-decoration: underline;
+}
+.ttn {
+  text-transform: none !important;
+}
+.tac {
+  text-align: center !important;
+}
+.tal {
+  text-align: left !important;
+}
+.taj {
+  text-align: justify !important;
+}
+.tar {
+  text-align: right !important;
+}
+.full {
+  width: 100% !important;
+}
+.large {
+  width: 66.66% !important;
+}
+.small {
+  width: 33.33% !important;
+}
+.semi {
+  width: 50% !important;
+}
+.wrap {
+  flex-wrap: wrap !important;
+}
+.center {
+  margin: 0 auto;
+}
+.clear {
+  clear: both !important;
+}
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.none {
+  display: none !important;
+}
+.opacity {
+  opacity: 0 !important;
+}
+@import "http://webfonts.ru/import/raleway.css";
+@import "http://webfonts.ru/import/roboto.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#potolok h1 {
+  color: #fff;
+  font-size: 45px;
+  font-family: 'Raleway SemiBold';
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 3em;
+}
+#potolok h2 {
+  color: #cf2930;
+  font-size: 25px;
+  font-family: 'Raleway SemiBold';
+  font-weight: 600;
+  margin: 30px 0;
+}
+#potolok a {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  line-height: 3;
+}
+#potolok p {
+  color: #000;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+#potolok .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#potolok .flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#potolok .flex.bottom {
+  margin-top: 410px;
+}
+#potolok section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#potolok section.section1 {
+  background: url("../img/block1.jpg") no-repeat;
+  background-size: 100% 50%;
+}
+#potolok .layer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: relative;
+}
+#potolok .layer.layer1 {
+  min-height: 410px;
+}
+#potolok .layer.layer1 img {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+}
+#potolok .layer.layer2 {
+  min-height: 410px;
+}
+#potolok .layer.layer2 img {
+  position: absolute;
+  top: -32%;
+}
+#potolok .layer.layer3 {
+  display: block;
+  text-align: center;
+  padding: 2.5em;
+  min-height: 150px;
+  background: #2d2d2d;
+}
+#potolok .layer.layer3 p {
+  color: #fff;
+}
+#potolok .layer.layer4 {
+  background: #3b70b0;
+  min-height: 480px;
+}
+#potolok .layer.layer5 {
+  background: #999;
+  min-height: 250px;
+  transform: rotate(4deg);
+  z-index: 1;
+  width: 105%;
+  position: absolute;
+  left: -2.5%;
+  top: 480px;
+}
+#potolok .layer.layer6 {
+  background: #2d2d2d;
+  min-height: 480px;
+}

@@ -1,0 +1,97 @@
+@import "variables.styl";
+@import "helpers.styl";
+@import "http://webfonts.ru/import/raleway.css"; //font-family: 'Raleway'
+@import "http://webfonts.ru/import/roboto.css"; //font-family: 'Roboto Regular'
+
+*
+	box-sizing border-box
+	margin 0
+	padding 0
+#potolok
+	/**/
+	h1
+		color #fff
+		font-size 45px
+		font-family 'Raleway SemiBold'
+		font-weight semibold
+		text-transform uppercase
+		padding-top 3em
+	h2
+		color red
+		font-size 25px
+		font-family 'Raleway SemiBold'
+		font-weight bold
+		margin 30px 0
+	a
+		color #fff
+		font-size 24px
+		font-family 'Raleway'
+		font-weight 400
+		line-height 3
+	p
+		color #000
+		font-size 18px
+		font-family 'Roboto'
+	/**/
+	.wrapper
+		max-width 1000px
+		margin 0 auto
+		position relative
+	.flex
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-around
+		align-items center
+		&.bottom
+			margin-top 410px
+	section
+		width 100%
+		position relative
+		overflow hidden
+		&.section1
+			background: url("../img/block1.jpg") no-repeat
+			background-size 100% 50%			
+	.layer
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		position relative
+		&.layer1
+			min-height 410px
+			img
+				position absolute
+				bottom -20%
+				right 0
+		&.layer2
+			min-height 410px
+			img
+				position absolute
+				top -32%
+		&.layer3
+			display block
+			text-align center
+			padding 2.5em
+			min-height 150px
+			background lightblack
+			p
+				color #fff
+		&.layer4
+			background darkblue 
+			min-height 480px
+		&.layer5
+			background #999
+			min-height 250px
+			transform rotate(4deg)
+			z-index 1
+			width 105%
+			position absolute
+			left -2.5%
+			top 480px
+		&.layer6
+			background gray 
+			min-height 480px
