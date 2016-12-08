@@ -1,0 +1,359 @@
+.font-white {
+  color: #fff !important;
+}
+.font-black {
+  color: #000 !important;
+}
+.font-red {
+  color: #cf2930 !important;
+}
+.font-blue {
+  color: #6aaeff !important;
+}
+.font-bold {
+  font-weight: 600 !important;
+}
+.font-normal {
+  font-weight: normal !important;
+}
+.font-xs {
+  font-size: 50% !important;
+}
+.font-s {
+  font-size: 80% !important;
+}
+.font-l {
+  font-size: 100% !important;
+}
+.font-xl {
+  font-size: 120% !important;
+}
+.font-xxl {
+  font-size: 150% !important;
+}
+.ttu {
+  text-transform: uppercase !important;
+}
+.tdu {
+  text-decoration: underline !important;
+}
+.ttn {
+  text-transform: none !important;
+}
+.tac {
+  text-align: center !important;
+}
+.tal {
+  text-align: left !important;
+}
+.taj {
+  text-align: justify !important;
+}
+.tar {
+  text-align: right !important;
+}
+.full {
+  width: 100% !important;
+}
+.large {
+  width: 66.66% !important;
+}
+.xxl {
+  width: 80% !important;
+}
+.xl {
+  width: 50% !important;
+}
+.small {
+  width: 33.33% !important;
+}
+.semi {
+  width: 50% !important;
+}
+.wrap {
+  -webkit-flex-wrap: wrap !important;
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important;
+}
+.center {
+  margin: 0 auto;
+}
+.clear {
+  clear: both !important;
+}
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.none {
+  display: none !important;
+}
+.opacity {
+  opacity: 0 !important;
+}
+.flex {
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.fc {
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+.fdc {
+  -webkit-flex-direction: column !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+@import "http://webfonts.ru/import/raleway.css";
+@import "http://webfonts.ru/import/roboto.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#potolok h1 {
+  color: #fff;
+  font-size: 45px;
+  font-family: 'Raleway SemiBold';
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 3em;
+}
+#potolok h2 {
+  color: #cf2930;
+  font-size: 25px;
+  font-family: 'Raleway SemiBold';
+  font-weight: 600;
+  margin: 30px 0;
+}
+#potolok a {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  line-height: 3;
+}
+#potolok p {
+  color: #000;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+#potolok .wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#potolok .flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#potolok .flex.bottom {
+  margin-top: 410px;
+}
+#potolok section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#potolok section.section1 {
+  background: url("../img/block1.jpg") no-repeat;
+  background-size: 100% 50%;
+}
+#potolok section.section3 {
+  background: #2d2d2d;
+}
+#potolok .layer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+#potolok .layer.layer1 {
+  min-height: 410px;
+}
+#potolok .layer.layer1 img {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+}
+#potolok .layer.layer2 {
+  min-height: 410px;
+}
+#potolok .layer.layer2 img {
+  position: absolute;
+  top: -32%;
+}
+#potolok .layer.layer3 {
+  display: block;
+  text-align: center;
+  padding: 2.5em;
+  min-height: 150px;
+  background: #2d2d2d;
+}
+#potolok .layer.layer3 p {
+  color: #fff;
+}
+#potolok .layer.layer4 {
+  background: #3b70b0;
+  min-height: 480px;
+}
+#potolok .layer.layer4 .wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#potolok .layer.layer4 .left {
+  margin-top: 5em;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#potolok .layer.layer4 .right {
+  position: relative;
+}
+#potolok .layer.layer4 img {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 80%;
+}
+#potolok .layer.layer5 {
+  background: url("../img/layer5-bg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 250px;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+  z-index: 1;
+  width: 105%;
+  position: absolute;
+  left: -2.5%;
+  top: 480px;
+}
+#potolok .layer.layer5 .wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(-4deg);
+      -ms-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+#potolok .layer.layer5 .left,
+#potolok .layer.layer5 .right {
+  margin-top: 4em;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#potolok .layer.layer5 img {
+  position: absolute;
+  left: 0;
+  top: -60%;
+  width: 90%;
+}
+#potolok .layer.layer5 hr {
+  width: 20em;
+  margin: 25px 0;
+}
+#potolok .layer.layer6 {
+  background: #2d2d2d url("../img/layer6-bg.png") no-repeat 90% 0;
+  min-height: 480px;
+}
+#potolok .layer.layer6 .left {
+  margin-top: 15em;
+}
+#potolok .layer.layer6 hr {
+  width: 20em;
+  margin: 25px 0;
+}
+#potolok .layer.layer7 {
+  background: url("../img/layer7-bg.jpg");
+  padding: 2.5em 0;
+}
+#potolok .layer.layer7 .wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#potolok .layer.layer7 .left {
+  position: relative;
+}
+#potolok .layer.layer7 img {
+  position: absolute;
+  top: -70px;
+  width: 50%;
+  left: 3em;
+}
+#potolok .layer.layer7 hr {
+  margin: 25px 3em;
+  background: #cf2930;
+  border: 1px solid #cf2930;
+}
+#potolok .layer.layer8 {
+  min-height: 420px;
+}
+#potolok .layer.layer9 {
+  min-height: 420px;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+  background: #6aaeff;
+  width: 105%;
+  left: -2.5%;
+  position: absolute;
+}
+/*# sourceMappingURL=app/stylus/style.css.map */
+/*# sourceMappingURL=style.css.map */

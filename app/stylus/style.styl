@@ -1,0 +1,184 @@
+@import "variables.styl";
+@import "helpers.styl";
+@import "http://webfonts.ru/import/raleway.css"; //font-family: 'Raleway'
+@import "http://webfonts.ru/import/roboto.css"; //font-family: 'Roboto Regular'
+
+*
+	box-sizing border-box
+	margin 0
+	padding 0
+#potolok
+	/**/
+	h1
+		color #fff
+		font-size 45px
+		font-family 'Raleway SemiBold'
+		font-weight semibold
+		text-transform uppercase
+		padding-top 3em
+	h2
+		color red
+		font-size 25px
+		font-family 'Raleway SemiBold'
+		font-weight bold
+		margin 30px 0
+	a
+		color #fff
+		font-size 24px
+		font-family 'Raleway'
+		font-weight 400
+		line-height 3
+	p
+		color #000
+		font-size 18px
+		font-family 'Roboto'
+	/**/
+	.wrapper
+		max-width 1000px
+		width 100%
+		margin 0 auto
+		position relative
+	.flex
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-around
+		align-items center
+		&.bottom
+			margin-top 410px
+	section
+		width 100%
+		position relative
+		overflow hidden
+		&.section1
+			background: url("../img/block1.jpg") no-repeat
+			background-size 100% 50%	
+		&.section3
+			background gray		
+	.layer
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		position relative
+		&.layer1
+			min-height 410px
+			img
+				position absolute
+				bottom -20%
+				right 0
+		&.layer2
+			min-height 410px
+			img
+				position absolute
+				top -32%
+		&.layer3
+			display block
+			text-align center
+			padding 2.5em
+			min-height 150px
+			background lightblack
+			p
+				color #fff
+		&.layer4
+			background darkblue 
+			min-height 480px
+			.wrapper
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+			.left
+				margin-top 5em
+				position relative
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				flex-direction column
+				align-items center
+			.right
+				position relative
+			img
+				position absolute
+				top -30px
+				right 0
+				width 80%
+		&.layer5
+			background url("../img/layer5-bg.jpg") no-repeat center
+			background-size cover
+			min-height 250px
+			transform rotate(4deg)
+			z-index 1
+			width 105%
+			position absolute
+			left -2.5%
+			top 480px
+			.wrapper
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				transform rotate(-4deg)
+			.left
+			.right
+				margin-top 4em
+				position relative
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				flex-direction column
+				align-items center
+			img
+				position absolute
+				left 0
+				top -60%
+				width 90%
+			hr
+				width 20em
+				margin 25px 0
+		&.layer6
+			background gray url("../img/layer6-bg.png") no-repeat 90% 0
+			min-height 480px
+			.left
+				margin-top 15em
+			hr
+				width 20em
+				margin 25px 0
+		&.layer7
+			background url("../img/layer7-bg.jpg")
+			padding 2.5em 0
+			.wrapper
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+			.left
+				position relative
+			img
+				position absolute
+				top -70px
+				width 50%
+				left 3em
+			hr
+				margin 25px 3em
+				background red
+				border 1px solid red;
+		&.layer8
+			min-height 420px
+		&.layer9
+			min-height 420px
+			transform rotate(4deg)
+			background lightblue
+			width 105%
+			left -2.5%
+			position absolute
