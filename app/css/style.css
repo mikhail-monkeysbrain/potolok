@@ -1,6 +1,9 @@
 .font-white {
   color: #fff !important;
 }
+.font-darkwhite {
+  color: #d5d5d5 !important;
+}
 .font-black {
   color: #000 !important;
 }
@@ -9,6 +12,9 @@
 }
 .font-blue {
   color: #6aaeff !important;
+}
+.font-gray {
+  color: #2d2d2d !important;
 }
 .font-bold {
   font-weight: 600 !important;
@@ -30,6 +36,9 @@
 }
 .font-xxl {
   font-size: 150% !important;
+}
+.font-hd {
+  margin: 25px 0 !important;
 }
 .ttu {
   text-transform: uppercase !important;
@@ -57,6 +66,12 @@
 }
 .large {
   width: 66.66% !important;
+}
+@media screen and (max-width: 960px) {
+  .large {
+    width: 90% !important;
+    margin: 0 auto;
+  }
 }
 .xxl {
   width: 80% !important;
@@ -154,6 +169,11 @@
   margin: 0 auto;
   position: relative;
 }
+@media screen and (max-width: 960px) {
+  #potolok .wrapper {
+    max-width: 800px;
+  }
+}
 #potolok .flex {
   display: -webkit-flex;
   display: -moz-flex;
@@ -181,7 +201,15 @@
   background-size: 100% 50%;
 }
 #potolok section.section3 {
-  background: #2d2d2d;
+  background: linear-gradient(4deg, #3b70b0 0%, #3b70b0 50%, #2d2d2d 50%, #2d2d2d 100%);
+}
+#potolok section.section4 {
+  background: #d5d5d5;
+}
+#potolok section.section5 {
+  min-height: 290px;
+  background: url("../img/section5-bg.jpg") no-repeat center;
+  background-size: cover;
 }
 #potolok .layer {
   display: -webkit-flex;
@@ -200,12 +228,22 @@
   bottom: -20%;
   right: 0;
 }
+@media screen and (max-width: 960px) {
+  #potolok .layer.layer1 img {
+    width: 15%;
+  }
+}
 #potolok .layer.layer2 {
   min-height: 410px;
 }
 #potolok .layer.layer2 img {
   position: absolute;
   top: -32%;
+}
+@media screen and (max-width: 960px) {
+  #potolok .layer.layer2 img {
+    width: 50%;
+  }
 }
 #potolok .layer.layer3 {
   display: block;
@@ -231,19 +269,6 @@
 }
 #potolok .layer.layer4 .left {
   margin-top: 5em;
-  position: relative;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 #potolok .layer.layer4 .right {
   position: relative;
@@ -282,18 +307,12 @@
 #potolok .layer.layer5 .right {
   margin-top: 4em;
   position: relative;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (max-width: 960px) {
+  #potolok .layer.layer5 .right {
+    margin-top: 2em;
+    margin-right: 1em;
+  }
 }
 #potolok .layer.layer5 img {
   position: absolute;
@@ -303,11 +322,17 @@
 }
 #potolok .layer.layer5 hr {
   width: 20em;
-  margin: 25px 0;
+  margin: 25px auto;
 }
 #potolok .layer.layer6 {
   background: #2d2d2d url("../img/layer6-bg.png") no-repeat 90% 0;
   min-height: 480px;
+}
+@media screen and (max-width: 960px) {
+  #potolok .layer.layer6 {
+    background: #2d2d2d url("../img/layer6-bg.png") no-repeat 90% 100%;
+    background-size: 50%;
+  }
 }
 #potolok .layer.layer6 .left {
   margin-top: 15em;
@@ -317,8 +342,13 @@
   margin: 25px 0;
 }
 #potolok .layer.layer7 {
-  background: url("../img/layer7-bg.jpg");
+  background: url("../img/layer7-bg.jpg") no-repeat;
   padding: 2.5em 0;
+}
+@media screen and (max-width: 960px) {
+  #potolok .layer.layer7 {
+    padding: 1.5em 0;
+  }
 }
 #potolok .layer.layer7 .wrapper {
   display: -webkit-flex;
@@ -337,23 +367,173 @@
   width: 50%;
   left: 3em;
 }
+@media screen and (max-width: 960px) {
+  #potolok .layer.layer7 img {
+    top: 0;
+  }
+}
 #potolok .layer.layer7 hr {
   margin: 25px 3em;
   background: #cf2930;
   border: 1px solid #cf2930;
 }
 #potolok .layer.layer8 {
-  min-height: 420px;
+  min-height: 320px;
+}
+#potolok .layer.layer8 .wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#potolok .layer.layer8 .left {
+  margin-top: 4em;
+}
+#potolok .layer.layer8 hr {
+  margin: 25px 5em;
+  background: #cf2930;
+  border: 1px solid #6aaeff;
 }
 #potolok .layer.layer9 {
-  min-height: 420px;
-  -webkit-transform: rotate(4deg);
-      -ms-transform: rotate(4deg);
-          transform: rotate(4deg);
-  background: #6aaeff;
-  width: 105%;
-  left: -2.5%;
+  min-height: 320px;
+}
+#potolok .layer.layer9 .left {
+  position: relative;
+}
+#potolok .layer.layer9 .right {
+  margin-top: 3em;
+}
+#potolok .layer.layer9 img {
   position: absolute;
+  top: -4em;
+  right: 0;
+}
+#potolok .layer.layer9 .wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#potolok .layer.layer9 hr {
+  margin: 25px auto;
+  background: #cf2930;
+  border: 1px solid #2d2d2d;
+}
+#potolok .layer.layer10 {
+  min-height: 188px;
+  background: url("../img/layer10-bg.jpg");
+}
+#potolok .layer.layer10 .wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#potolok .layer.layer10 .right {
+  position: relative;
+}
+#potolok .layer.layer10 img {
+  position: absolute;
+  width: 60%;
+  top: -2em;
+  left: 20%;
+}
+#potolok .layer.layer11 {
+  min-height: 770px;
+}
+#potolok .layer.layer11 .left {
+  background: #2d2d2d;
+}
+#potolok .layer.layer11 .right {
+  background: #3b70b0;
+}
+@media screen and (max-width: 1200px) {
+  #potolok .layer.layer11 img {
+    width: 60%;
+  }
+}
+#potolok .layer.layer11 img.fl {
+  margin-right: 5%;
+}
+#potolok .layer.layer11 img.fr {
+  margin-left: 5%;
+}
+#potolok .layer.layer12 {
+  background: linear-gradient(4deg, #d5d5d5 0%, #d5d5d5 80%, transparent 80%, transparent 100%);
+  min-height: 440px;
+  margin-top: -9%;
+  padding-top: 10%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#potolok .layer.layer12 p {
+  text-align: center;
+  text-transform: uppercase;
+}
+#potolok .layer.layer12 .blocksize {
+  height: 45px;
+  margin: 10px 0;
+}
+#potolok .layer.layer12 .left p {
+  line-height: 65px;
+  margin-right: -5px;
+}
+#potolok .layer.layer12 .left p.font-bs3 {
+  color: #269594;
+}
+#potolok .layer.layer12 .left p.font-bs4 {
+  color: #3b70b0;
+}
+#potolok .layer.layer12 .left .blocksize {
+  border-radius: 23px 0 0 23px;
+  float: right;
+  padding: 0 5px 0 20px;
+}
+#potolok .layer.layer12 .left .blocksize p {
+  line-height: 45px;
+  margin-right: 15px;
+}
+#potolok .layer.layer12 .left .blocksize.bs1 {
+  background: #eb696f;
+  width: 36%;
+}
+#potolok .layer.layer12 .left .blocksize.bs2 {
+  width: 16%;
+  background: #865a95;
+}
+#potolok .layer.layer12 .right .blocksize {
+  border-radius: 0 23px 23px 0;
+  float: left;
+  padding: 0 20px 0 5px;
+}
+#potolok .layer.layer12 .right .blocksize p {
+  line-height: 45px;
+}
+#potolok .layer.layer12 .right .blocksize.bs1 {
+  background: #cf2930;
+  width: 65%;
+}
+#potolok .layer.layer12 .right .blocksize.bs2 {
+  width: 45%;
+  background: #6c3b7c;
+}
+#potolok .layer.layer12 .right .blocksize.bs3 {
+  background: #269594;
+  width: 29%;
+}
+#potolok .layer.layer12 .right .blocksize.bs4 {
+  background: #3b70b0;
+  width: 11%;
 }
 /*# sourceMappingURL=app/stylus/style.css.map */
 /*# sourceMappingURL=style.css.map */

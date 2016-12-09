@@ -38,6 +38,8 @@
 		width 100%
 		margin 0 auto
 		position relative
+		+media(960px)
+			max-width 800px
 	.flex
 		display -webkit-flex
 		display -moz-flex
@@ -56,7 +58,13 @@
 			background: url("../img/block1.jpg") no-repeat
 			background-size 100% 50%	
 		&.section3
-			background gray		
+			background linear-gradient(4deg, darkblue 0%,darkblue 50%,gray 50%,gray 100%)	
+		&.section4
+			background darkwhite	
+		&.section5
+			min-height 290px
+			background url("../img/section5-bg.jpg") no-repeat center
+			background-size cover
 	.layer
 		display -webkit-flex
 		display -moz-flex
@@ -70,11 +78,15 @@
 				position absolute
 				bottom -20%
 				right 0
+				+media(960px)
+					width 15%
 		&.layer2
 			min-height 410px
 			img
 				position absolute
 				top -32%
+				+media(960px)
+					width 50%
 		&.layer3
 			display block
 			text-align center
@@ -94,14 +106,6 @@
 				display flex
 			.left
 				margin-top 5em
-				position relative
-				display -webkit-flex
-				display -moz-flex
-				display -ms-flex
-				display -o-flex
-				display flex
-				flex-direction column
-				align-items center
 			.right
 				position relative
 			img
@@ -130,13 +134,10 @@
 			.right
 				margin-top 4em
 				position relative
-				display -webkit-flex
-				display -moz-flex
-				display -ms-flex
-				display -o-flex
-				display flex
-				flex-direction column
-				align-items center
+			.right
+				+media(960px)
+					margin-top 2em
+					margin-right 1em				
 			img
 				position absolute
 				left 0
@@ -144,18 +145,24 @@
 				width 90%
 			hr
 				width 20em
-				margin 25px 0
+				margin 25px auto
 		&.layer6
 			background gray url("../img/layer6-bg.png") no-repeat 90% 0
 			min-height 480px
+			+media(960px)
+				background gray url("../img/layer6-bg.png") no-repeat 90% 100%
+				background-size 50%
+				
 			.left
 				margin-top 15em
 			hr
 				width 20em
 				margin 25px 0
 		&.layer7
-			background url("../img/layer7-bg.jpg")
+			background url("../img/layer7-bg.jpg") no-repeat
 			padding 2.5em 0
+			+media(960px)
+				padding 1.5em 0
 			.wrapper
 				display -webkit-flex
 				display -moz-flex
@@ -169,16 +176,125 @@
 				top -70px
 				width 50%
 				left 3em
+				+media(960px)
+					top 0
 			hr
 				margin 25px 3em
 				background red
-				border 1px solid red;
+				border 1px solid red
 		&.layer8
-			min-height 420px
+			min-height 320px
+			.wrapper
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+			.left
+				margin-top 4em
+			hr
+				margin 25px 5em
+				background red
+				border 1px solid lightblue
 		&.layer9
-			min-height 420px
-			transform rotate(4deg)
-			background lightblue
-			width 105%
-			left -2.5%
-			position absolute
+			min-height 320px
+			.left
+				position relative
+			.right
+				margin-top 3em
+			img
+				position absolute
+				top -4em
+				right 0
+			.wrapper
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+			hr
+				margin 25px auto
+				background red
+				border 1px solid gray
+		&.layer10
+			min-height 188px
+			background url("../img/layer10-bg.jpg")
+			.wrapper
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+			.right
+				position relative
+			img
+				position absolute
+				width 60%
+				top -2em
+				left 20%
+		&.layer11
+			min-height 770px
+			.left
+				background gray
+			.right
+				background darkblue
+			img
+				+media(1200px)
+					width 60%
+				&.fl
+					margin-right 5%
+				&.fr
+					margin-left 5%
+		&.layer12
+			background linear-gradient(4deg, darkwhite 0%,darkwhite 80%,transparent 80%,transparent 100%)
+			min-height 440px
+			margin-top -9%
+			padding-top 10%
+			justify-content center
+			p
+				text-align center
+				text-transform uppercase
+			.blocksize
+				height 45px
+				margin 10px 0
+			.left
+				p
+					line-height 65px
+					margin-right -5px
+					&.font-bs3
+						color #269594
+					&.font-bs4
+						color #3b70b0
+				.blocksize
+					border-radius 23px 0 0 23px
+					float right
+					padding 0 5px 0 20px
+					p
+						line-height 45px
+						margin-right 15px
+					&.bs1
+						background #eb696f
+						width 36%
+					&.bs2
+						width 16%
+						background #865a95
+			.right
+				.blocksize
+					border-radius 0 23px 23px 0
+					float left
+					padding 0 20px 0 5px
+					p
+						line-height 45px
+					&.bs1
+						background red
+						width 65%
+					&.bs2
+						width 45%
+						background #6c3b7c
+					&.bs3
+						background #269594
+						width 29%
+					&.bs4
+						background #3b70b0
+						width 11%
